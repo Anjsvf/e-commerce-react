@@ -40,10 +40,10 @@ app.post("/upload", upload.single("productImage"), (req, res) => {
       .status(400)
       .json({ success: 0, message: "Nenhum arquivo enviado" });
   }
-
+  const baseUrl = "https://e-commerce-react-backend.onrender.com";
   res.json({
     success: 1,
-    image_url: `http://localhost:${port}/images/${req.file.filename}`,
+    image_url: `${baseUrl}/images/${req.file.filename}`,
   });
 });
 
