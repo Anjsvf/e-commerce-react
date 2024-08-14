@@ -1,0 +1,14 @@
+/* Reseta margens e paddings padrão e define box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+/* Estilo global para o body */
+body {
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+   
+}

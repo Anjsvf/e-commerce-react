@@ -1,0 +1,123 @@
+.shop-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.shop-category-banner {
+  display: block;
+  margin: 30px auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.shop-category-index-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px 0;
+}
+
+.shop-category-sort {
+  display: flex;
+  align-items: center;
+  padding: 10px 19px;
+  border-radius: 30px;
+  border: 1px solid #888;
+  cursor: pointer;
+}
+
+.shop-category-index-sort p {
+  font-size: 16px;
+}
+
+.shop-category-index-sort p span {
+  font-weight: 600;
+}
+
+.shop-category-products {
+  display: grid;
+  gap: 20px;
+  width: 80%;
+  max-width: 1000px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin: 20px 0;
+}
+
+.shop-category-load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 50px 0;
+  border-radius: 25px;
+  background: #ededed;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 1280px) {
+  .shop-category-banner {
+    width: 90%;
+  }
+  .shop-category-index-sort {
+    width: 90%;
+  }
+  .shop-category-sort {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .shop-category-index-sort p {
+    font-size: 14px;
+  }
+  .shop-category-products {
+    width: 90%;
+  }
+  .shop-category-load-more {
+    width: 180px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .shop-category-banner {
+    width: 95%;
+  }
+  .shop-category-index-sort {
+    width: 95%;
+  }
+  .shop-category-sort {
+    font-size: 12px;
+  }
+  .shop-category-index-sort p {
+    font-size: 12px;
+  }
+  .shop-category-products {
+    width: 95%;
+    gap: 10px;
+  }
+  .shop-category-load-more {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .shop-category-products {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .shop-category-load-more {
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
