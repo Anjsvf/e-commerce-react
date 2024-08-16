@@ -81,8 +81,9 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 FASHIONWIX - Documentation
 Overview
 
+<h2>FRONTEND</h2>
 
-Project URL: e-commerce-react-frontend.onrender.com
+Project URL: https://e-commerce-react-frontend.onrender.com
 
 Features
 1. Home Page
