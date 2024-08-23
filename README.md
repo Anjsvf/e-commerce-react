@@ -149,7 +149,7 @@ npm run build
 Deploy to Render:
 Follow the instructions on Render.com for deploying a static site.
 
-How to Contribute
+How to you can Contribute
 Reporting Issues
 Use the GitHub issues section to report bugs or suggest improvements.
 Adding New Features
