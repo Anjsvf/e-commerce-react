@@ -6,16 +6,18 @@ const jwt = require("jsonwebtoken");
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 4000;
+
 require("dotenv").config(); 
 
 // Middleware
 app.use(express.json());
+//suport
 app.use(cors());
 app.use("/images", express.static(path.join(__dirname, "upload/images")));
 
 // Rotas
 app.get("/", (req, res) => {
-  res.send("API rodando");
+  res.send("API  rodando ...");
 });
 
 // Configuração do Multer para upload de imagens

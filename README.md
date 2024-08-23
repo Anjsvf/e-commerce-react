@@ -86,6 +86,7 @@ Overview
 Project URL: https://e-commerce-react-frontend.onrender.com
 
 Features
+
 1. Home Page
 New Collection Banner: Highlights the latest fashion collections for all audiences.
 Trending Products: Displays popular items with discounted prices.
