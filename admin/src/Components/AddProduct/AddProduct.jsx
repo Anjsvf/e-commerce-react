@@ -29,7 +29,7 @@ const AddProduct = () => {
     formData.append('productImage', image);
 
     try {
-      const response = await fetch('https://e-commerce-react-backend.onrender.com/upload', {
+      const response = await fetch('https://e-commerce-react-backend-838f.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
