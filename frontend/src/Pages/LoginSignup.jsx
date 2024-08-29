@@ -34,7 +34,7 @@ const LoginSignup = () => {
   const signup  = async ()=>{
     console.log("Login");
      let responseData 
-    await fetch('https://e-commerce-react-backend.onrender.com/signup',{
+    await fetch('https://e-commerce-react-backend-838f.onrender.com/signup',{
       method:"POST",
       headers:{
         Accept:"application/format-data",
