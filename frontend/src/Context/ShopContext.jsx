@@ -59,7 +59,7 @@ if(localStorage.getItem('auth-token')){
   const removeFromCart = (itemId) =>{
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
     if(localStorage.getItem('auth-token')){
-      fetch('https://e-commerce-react-backend.onrender.com/removefromcart',{
+      fetch('https://e-commerce-react-backend-838f.onrender.com/removefromcart',{
         method:"POST",
         headers:{
           accept:'application/form-data',
