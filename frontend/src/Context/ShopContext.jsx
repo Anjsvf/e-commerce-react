@@ -20,11 +20,11 @@ const ShopContextProvider = (props) =>{
   const [cartItems, setCartItems] = useState(getdefaultCart()) 
   
   useEffect(()=>{
-    fetch('https://e-commerce-react-backend.onrender.com/allproducts')
+    fetch('https://e-commerce-react-backend-838f.onrender.com/allproducts')
     .then((response)=>response.json())
     .then((data)=>setAll_Product(data))
 if(localStorage.getItem('auth-token')){
-  fetch('https://e-commerce-react-backend.onrender.com/getcart',{
+  fetch('https://e-commerce-react-backend-838f.onrender.com/getcart',{
     method:'POST',
     headers:{
       Accept:'application/form-data',
@@ -39,7 +39,7 @@ if(localStorage.getItem('auth-token')){
   const addToCart = (itemId) =>{
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
     if(localStorage.getItem('auth-token')){
-      fetch('https://e-commerce-react-backend.onrender.com/addtocart',{
+      fetch('https://e-commerce-react-backend-838f.onrender.com/addtocart',{
         method:"POST",
         headers:{
           accept:'application/form-data',
