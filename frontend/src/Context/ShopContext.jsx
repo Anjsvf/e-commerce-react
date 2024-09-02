@@ -20,11 +20,11 @@ const ShopContextProvider = (props) =>{
   const [cartItems, setCartItems] = useState(getdefaultCart()) 
   
   useEffect(()=>{
-    fetch('https://e-commerce-react-backend-838f.onrender.com/allproducts')
+    fetch('/allproducts')
     .then((response)=>response.json())
     .then((data)=>setAll_Product(data))
 if(localStorage.getItem('auth-token')){
-  fetch('https://e-commerce-react-backend-838f.onrender.com/getcart',{
+  fetch('/getcart',{
     method:'POST',
     headers:{
       Accept:'application/form-data',
@@ -39,7 +39,7 @@ if(localStorage.getItem('auth-token')){
   const addToCart = (itemId) =>{
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
     if(localStorage.getItem('auth-token')){
-      fetch('https://e-commerce-react-backend-838f.onrender.com/addtocart',{
+      fetch('/addtocart',{
         method:"POST",
         headers:{
           accept:'application/form-data',
@@ -59,7 +59,7 @@ if(localStorage.getItem('auth-token')){
   const removeFromCart = (itemId) =>{
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
     if(localStorage.getItem('auth-token')){
-      fetch('https://e-commerce-react-backend-838f.onrender.com/removefromcart',{
+      fetch('/removefromcart',{
         method:"POST",
         headers:{
           accept:'application/form-data',
