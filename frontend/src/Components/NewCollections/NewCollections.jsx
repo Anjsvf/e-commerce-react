@@ -5,7 +5,7 @@ import Item from '../Item/Item'
 const NewCollections = () => {
   const [new_collection, setNew_collection] = useState([])
   useEffect(()=>{
-  fetch('/newcollections')
+  fetch('https://e-commerce-react-backend-wg0r.onrender.com/newcollections')
   .then((response)=>response.json())
   .then((data)=>setNew_collection(data))
   },[])

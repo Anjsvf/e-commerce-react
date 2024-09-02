@@ -29,7 +29,7 @@ const AddProduct = () => {
     formData.append('productImage', image);
 
     try {
-      const response = await fetch('/upload', {
+      const response = await fetch('https://e-commerce-react-backend-wg0r.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
@@ -45,7 +45,7 @@ const AddProduct = () => {
         console.log(product);
 
         // Aqui você pode enviar `product` para outro endpoint para salvar os dados no banco de dados
-        const saveProductResponse = await fetch('/addproduct', {
+        const saveProductResponse = await fetch('https://e-commerce-react-backend-wg0r.onrender.com/addproduct', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

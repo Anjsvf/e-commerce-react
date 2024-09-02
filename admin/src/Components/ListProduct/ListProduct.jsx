@@ -4,14 +4,14 @@ import remove_icon from '../../assets/cross_icon.png'
 const ListProduct = () => {
   const [allproducts,setAllProducts] = useState([])
   const  fetchInfo =  async ()=>{
-     await fetch('/allproducts').then((res)=>res.json()).then((data)=>{setAllProducts(data)})
+     await fetch('https://e-commerce-react-backend-wg0r.onrender.com/allproducts').then((res)=>res.json()).then((data)=>{setAllProducts(data)})
   }
 
   useEffect(()=>{
       fetchInfo()
   },[])
   const  remove_product = async (id) =>{
-    await fetch('/removeproduct',{
+    await fetch('https://e-commerce-react-backend-wg0r.onrender.com/removeproduct',{
       method:'POST',
       headers:{
         Acecept:'applicaation/json',
